@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:url('./bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+
+main.cards{
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 250px;
+    margin-left: 32px;
+}
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    margin: 16px 0;
+}
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 250px;
+    font-size: 70%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border: 1px solid orange;
+    background-color: transparent;
+    color: orange;
+    font-size: 80%;
+    font-weight: 500px;
+    transition: .5s;
+}
+
+main.cards section.card button:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+main.cards section.card{
+    box-shadow: 30px 30px 50px -30px black;
+}
+
+@media screen and (max-width:750px){
+    main.cards{
+        flex-direction: column;
+    }
+    main.cards section.card{
+        margin: 0%;
+        margin-bottom: 32px;
+    }
+}
